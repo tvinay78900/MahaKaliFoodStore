@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>MahaKaliFoodStore</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <script
+    src="https://kit.fontawesome.com/4b8b03c12d.js"
+    crossorigin="anonymous"
+  ></script>
+
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header class="navbar">
+
+    <div class="logo">
+
+      <i class="fa-solid fa-burger"></i>
+
+      <h2>MahaKaliFoodStore</h2>
+
+    </div>
+
+    <nav>
+
+      <a href="#home">
+        Home
+      </a>
+
+      <a href="#menu">
+        Menu
+      </a>
+
+      <a href="#cart">
+        Order
+      </a>
+
+    </nav>
+
+  </header>
+
+  <!-- ================= HERO ================= -->
+
+  <section
+    class="hero"
+    id="home"
+  >
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <h1>
+        Delicious Food
+        <br>
+        Delivered Fast 🚀
+      </h1>
+
+      <p>
+        Fresh Burgers, Pizza,
+        Drinks & More
+      </p>
+
+      <div class="contact">
+
+        <i class="fa-solid fa-phone"></i>
+
+        <span>
+          Contact Us : 9957643216
+        </span>
+
+      </div>
+
+      <button onclick="scrollToMenu()">
+
+        Browse Menu
+
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- ================= MENU ================= -->
+
+  <section
+    class="menu-section"
+    id="menu"
+  >
+
+    <div class="section-title">
+
+      <h2>
+        Our Menu 🍔
+      </h2>
+
+      <p>
+        Choose your favorite food
+      </p>
+
+    </div>
+
+    <div class="search-box">
+
+      <i class="fa-solid fa-magnifying-glass"></i>
+
+      <input
+        type="text"
+        placeholder="Search for burgers, pizza, drinks..."
+        id="searchInput"
+      />
+
+    </div>
+
+    <div
+      class="menu-container"
+      id="menuContainer"
+    >
+
+    </div>
+
+  </section>
+
+  <!-- ================= CART ================= -->
+
+  <section
+    class="cart-section"
+    id="cart"
+  >
+
+    <div class="section-title">
+
+      <h2>
+        Your Order 🛒
+      </h2>
+
+    </div>
+
+    <div class="cart-container">
+
+      <!-- ================= CART ITEMS ================= -->
+
+      <div
+        class="cart-items"
+        id="cartItems"
+      >
+
+        <div class="empty-cart">
+
+          <i class="fa-solid fa-cart-shopping"></i>
+
+          <h3>
+            Your Cart is Empty
+          </h3>
+
+          <p>
+            Add items from menu
+            to place an order
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- ================= SUMMARY ================= -->
+
+      <div class="summary-box">
+
+        <h3>
+          Order Summary
+        </h3>
+
+        <div class="summary-row">
+
+          <span>
+            Total Items
+          </span>
+
+          <span id="totalItems">
+            0
+          </span>
+
+        </div>
+
+        <div class="summary-row total">
+
+          <span>
+            Total Amount
+          </span>
+
+          <span>
+
+            ₹<span id="totalPrice">
+              0
+            </span>
+
+          </span>
+
+        </div>
+
+        <!-- ================= DELIVERY FORM ================= -->
+
+        <div class="delivery-form">
+
+          <h3>
+            Delivery Details
+          </h3>
+
+          <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+          />
+
+          <input
+            type="text"
+            id="phone"
+            placeholder="Phone Number"
+          />
+
+          <textarea
+            id="address"
+            placeholder="Complete Delivery Address"
+          ></textarea>
+
+          <button onclick="placeOrder()">
+
+            Place Order
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CUSTOM POPUP ================= -->
+
+  <div
+    class="popup-overlay"
+    id="popupOverlay"
+  >
+
+    <div class="popup-box">
+
+      <h2 id="popupTitle">
+
+        Title
+
+      </h2>
+
+      <p id="popupMessage">
+
+        Message
+
+      </p>
+
+      <div class="popup-buttons">
+
+        <button
+          class="popup-btn cancel-btn"
+          id="popupCancel"
+        >
+
+          Cancel
+
+        </button>
+
+        <button
+          class="popup-btn ok-btn"
+          id="popupOk"
+        >
+
+          OK
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ================= SCRIPT ================= -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
