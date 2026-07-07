@@ -433,6 +433,18 @@ td{
 
 }
 
+.address-cell{
+
+    max-width:220px;
+
+    white-space:normal;
+
+    word-break:break-word;
+
+    overflow-wrap:break-word;
+
+}
+
 .action-btn:hover{
 
   transform:scale(1.05);

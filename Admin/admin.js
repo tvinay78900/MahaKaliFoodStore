@@ -247,7 +247,7 @@ function loadOrders(){
           ₹${order.amount}
         </td>
 
-        <td>
+        <td class="address-cell">
           ${order.address}
         </td>
 
@@ -576,7 +576,7 @@ function applyDateFilter(){
           ₹${order.amount}
         </td>
 
-        <td>
+        <td class="address-cell">
           ${order.address}
         </td>
 
