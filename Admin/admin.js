@@ -248,7 +248,7 @@ function loadOrders(){
         </td>
 
         <td>
-          ${order.customer_address}
+          ${order.address}
         </td>
 
         <td>
@@ -554,7 +554,7 @@ function applyDateFilter(){
         </td>
 
         <td>
-          ${order.customer_address}
+          ${order.address}
         </td>
 
         <td>
