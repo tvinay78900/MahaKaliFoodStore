@@ -240,6 +240,10 @@ function loadOrders(){
         </td>
 
         <td>
+          ${order.customer_address}
+        </td>
+
+        <td>
           ${order.items}
         </td>
 
