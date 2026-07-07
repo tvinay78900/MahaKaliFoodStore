@@ -227,8 +227,6 @@ function loadOrders(){
 
   filteredOrders.forEach(order => {
 
-    console.log(order.created_at);
-
     ordersTable.innerHTML += `
     
       <tr>
@@ -264,8 +262,31 @@ function loadOrders(){
         </td>
 
         <td>
-          ${order.created_at}
-        </td>
+${(() => {
+    const d = new Date(order.created_at);
+
+    const weekday = d.toLocaleString("en-IN", {
+        weekday: "short",
+        timeZone: "Asia/Kolkata"
+    });
+
+    const date = d.toLocaleString("en-IN", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+        timeZone: "Asia/Kolkata"
+    });
+
+    const time = d.toLocaleString("en-IN", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
+        timeZone: "Asia/Kolkata"
+    });
+
+    return `${weekday}, ${date} ${time}`;
+})()}
+</td>
 
         <td>
 
