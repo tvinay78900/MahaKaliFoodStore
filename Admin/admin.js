@@ -96,8 +96,8 @@ function loginAdmin(){
   /* ================= LOGIN CHECK ================= */
 
   if(
-    username === "admin" &&
-    password === "admin123"
+    username === "Vinay Tiwari" &&
+    password === "1234"
   ){
 
     showPopup(
@@ -235,7 +235,7 @@ function loadOrders(){
           #${order.id}
         </td>
 
-        <td>
+        <td class="address-cell">
           ${order.customer_name}
         </td>
 
@@ -564,7 +564,7 @@ function applyDateFilter(){
           #${order.id}
         </td>
 
-        <td>
+        <td class="address-cell">
           ${order.customer_name}
         </td>
 
