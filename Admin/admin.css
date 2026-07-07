@@ -409,11 +409,9 @@ td{
 
 .action-btn{
 
+  width:120px;
+
   height:38px;
-
-  width:150px;
-
-  padding:8px 15px;
 
   border:none;
 
@@ -425,9 +423,13 @@ td{
 
   margin-right:8px;
 
-  transition:0.1s;
+  transition:0.3s;
 
-  white-space: nowrap;
+  font-size:14px;
+
+  font-weight:600;
+
+  text-align:center;
 
 }
 
