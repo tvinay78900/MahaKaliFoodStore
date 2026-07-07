@@ -509,6 +509,8 @@ function clearFilter(){
 
 function applyDateFilter(){
 
+  currentFilter = "date";
+
   const fromDate =
     document.getElementById("fromDate").value;
 
@@ -539,16 +541,16 @@ function applyDateFilter(){
     const orderDate =
       new Date(order.created_at);
 
-    const from =
-      new Date(fromDate);
+    const from = new Date(fromDate);
+from.setHours(0, 0, 0, 0);
 
-    const to =
-      new Date(toDate);
+const to = new Date(toDate);
+to.setHours(23, 59, 59, 999);
 
-    return (
-      orderDate >= from &&
-      orderDate <= to
-    );
+return (
+  orderDate >= from &&
+  orderDate <= to
+);
 
   });
 
