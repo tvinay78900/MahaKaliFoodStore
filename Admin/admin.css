@@ -425,7 +425,9 @@ td{
 
   margin-right:8px;
 
-  transition:0.3s;
+  transition:0.1s;
+
+  white-space: nowrap;
 
 }
 
