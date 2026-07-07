@@ -365,6 +365,8 @@ table{
 
   border-collapse:collapse;
 
+  
+
 }
 
 th{
@@ -382,6 +384,8 @@ td{
   padding:15px;
 
   border-bottom:1px solid #333;
+
+  white-space: nowrap;
 
 }
 
@@ -409,9 +413,7 @@ td{
 
 .action-btn{
 
-  width:95px;
-
-  height:38px;
+  padding:8px 15px;
 
   border:none;
 
@@ -425,11 +427,7 @@ td{
 
   transition:0.3s;
 
-  font-size:14px;
-
-  font-weight:600;
-
-  text-align:center;
+  white-space: nowrap;
 
 }
 
