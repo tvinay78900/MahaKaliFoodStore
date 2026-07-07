@@ -240,15 +240,15 @@ function loadOrders(){
         </td>
 
         <td>
-          ${order.customer_address}
-        </td>
-
-        <td>
           ${order.items}
         </td>
 
         <td>
           ₹${order.amount}
+        </td>
+
+        <td>
+          ${order.customer_address}
         </td>
 
         <td>
@@ -551,6 +551,10 @@ function applyDateFilter(){
 
         <td>
           ₹${order.amount}
+        </td>
+
+        <td>
+          ${order.customer_address}
         </td>
 
         <td>
