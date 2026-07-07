@@ -202,7 +202,12 @@ async function fetchOrders(){
 
 setInterval(() => {
 
-  fetchOrders();
+  if (
+      document.getElementById("fromDate").value === "" &&
+      document.getElementById("toDate").value === ""
+  ) {
+      fetchOrders();
+  }
 
 }, 2000);
 
@@ -508,8 +513,6 @@ function clearFilter(){
 /* ================= APPLY DATE FILTER ================= */
 
 function applyDateFilter(){
-
-  currentFilter = "date";
 
   const fromDate =
     document.getElementById("fromDate").value;
