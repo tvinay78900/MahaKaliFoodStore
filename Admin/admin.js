@@ -227,6 +227,8 @@ function loadOrders(){
 
   filteredOrders.forEach(order => {
 
+    console.log(order.created_at);
+
     ordersTable.innerHTML += `
     
       <tr>
