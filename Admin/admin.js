@@ -568,8 +568,17 @@ function applyDateFilter(){
         </td>
 
         <td>
-          ${order.created_at}
-        </td>
+  ${new Date(order.created_at).toLocaleString("en-IN", {
+    timeZone: "Asia/Kolkata",
+    weekday: "short",
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true
+  })}
+</td>
 
         <td>
 
