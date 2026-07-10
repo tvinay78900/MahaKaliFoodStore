@@ -190,13 +190,13 @@ function addToCart(id){
 
   /* ================= POPUP ================= */
 
-  showPopup(
+  // showPopup(
 
-    "Added To Cart 🛒",
+  //   "Added To Cart 🛒",
 
-    `${item.name} added successfully`
+  //   `${item.name} added successfully`
 
-  );
+  // );
 
   /* ================= AUTO SCROLL ================= */
 
