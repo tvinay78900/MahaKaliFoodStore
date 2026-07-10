@@ -490,7 +490,7 @@ async function deleteOrder(id){
 
       }catch(error){
 
-        document.getElementById("loadingOverlay").style.display = "flex";
+        document.getElementById("loadingOverlay").style.display = "none";
 
         console.log(error);
 
