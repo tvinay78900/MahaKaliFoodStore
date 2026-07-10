@@ -447,11 +447,13 @@ async function toggleOrderStatus(id){
 
         );
 
-        fetchOrders();
+      await fetchOrders();
+
+      document.getElementById("loadingOverlay").style.display = "none";
 
       }catch(error){
 
-        document.getElementById("loadingOverlay").style.display = "none";
+      document.getElementById("loadingOverlay").style.display = "none";
 
         console.log(error);
 
@@ -476,6 +478,8 @@ async function deleteOrder(id){
 
       try{
 
+        document.getElementById("loadingOverlay").style.display = "flex";
+
         await fetch(
 
           `https://mahakalifoodstore.onrender.com/api/delete-order/${id}`,
@@ -486,9 +490,9 @@ async function deleteOrder(id){
 
         );
 
-        document.getElementById("loadingOverlay").style.display = "none";
+      await fetchOrders();
 
-        fetchOrders();
+      document.getElementById("loadingOverlay").style.display = "none";
 
       }catch(error){
 
