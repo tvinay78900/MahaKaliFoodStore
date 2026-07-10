@@ -419,7 +419,7 @@ async function placeOrder(){
 
       try{
 
-        document.getElementById("loadingOverlay").style.display = "none";
+        document.getElementById("loadingOverlay").style.display = "flex";
 
         const response = await fetch(
 
@@ -454,8 +454,7 @@ async function placeOrder(){
         const data =
           await response.json();
 
-          document.getElementById("loadingOverlay").style.display = "none";
-
+        document.getElementById("loadingOverlay").style.display = "none";
 
         /* ================= SUCCESS ================= */
 
@@ -482,8 +481,6 @@ async function placeOrder(){
         document.getElementById("address").value = "";
 
       }catch(error){
-
-document.getElementById("loadingOverlay").style.display = "none";
 
         console.log(error);
 
