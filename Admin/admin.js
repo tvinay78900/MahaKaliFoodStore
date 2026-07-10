@@ -451,6 +451,8 @@ async function toggleOrderStatus(id){
 
       }catch(error){
 
+        document.getElementById("loadingOverlay").style.display = "none";
+
         console.log(error);
 
       }
