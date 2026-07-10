@@ -419,6 +419,8 @@ async function placeOrder(){
 
       try{
 
+        document.getElementById("loadingOverlay").style.display = "none";
+
         const response = await fetch(
 
           "https://mahakalifoodstore.onrender.com/api/place-order",
@@ -452,6 +454,9 @@ async function placeOrder(){
         const data =
           await response.json();
 
+          document.getElementById("loadingOverlay").style.display = "none";
+
+
         /* ================= SUCCESS ================= */
 
         showPopup(
@@ -477,6 +482,8 @@ async function placeOrder(){
         document.getElementById("address").value = "";
 
       }catch(error){
+
+document.getElementById("loadingOverlay").style.display = "none";
 
         console.log(error);
 
