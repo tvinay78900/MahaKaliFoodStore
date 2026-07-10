@@ -423,6 +423,8 @@ async function toggleOrderStatus(id){
 
       try{
 
+        document.getElementById("loadingOverlay").style.display = "flex";
+
         await fetch(
 
           `https://mahakalifoodstore.onrender.com/api/update-status/${id}`,
@@ -482,9 +484,13 @@ async function deleteOrder(id){
 
         );
 
+        document.getElementById("loadingOverlay").style.display = "none";
+
         fetchOrders();
 
       }catch(error){
+
+        document.getElementById("loadingOverlay").style.display = "flex";
 
         console.log(error);
 
