@@ -423,7 +423,7 @@ async function placeOrder(){
 
         const response = await fetch(
 
-          "https://mahakalifoodstore.onrender.com/api/place-order",
+          "https://mahakali-food-store.onrender.com/api/place-order",
 
           {
 

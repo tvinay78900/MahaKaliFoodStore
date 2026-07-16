@@ -174,7 +174,7 @@ async function fetchOrders(){
 
     const response = await fetch(
 
-      "https://mahakalifoodstore.onrender.com/api/orders"
+      "https://mahakali-food-store.onrender.com/api/orders"
 
     );
 
@@ -427,7 +427,7 @@ async function toggleOrderStatus(id){
 
         await fetch(
 
-          `https://mahakalifoodstore.onrender.com/api/update-status/${id}`,
+          `https://mahakali-food-store.onrender.com/api/update-status/${id}`,
 
           {
 
@@ -482,7 +482,7 @@ async function deleteOrder(id){
 
         await fetch(
 
-          `https://mahakalifoodstore.onrender.com/api/delete-order/${id}`,
+          `https://mahakali-food-store.onrender.com/api/delete-order/${id}`,
 
           {
             method:"DELETE"
